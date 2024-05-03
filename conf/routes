@@ -11,4 +11,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 
 GET  /hello        controllers.HomeController.hello(name: String)
 
+# Jsonを扱うAPIのサンプル
 GET   /places               controllers.JsonController.listPlaces()
+POST  /places               controllers.JsonController.savePlace()
+POST  /places2               controllers.JsonController.savePlaceConcise()
