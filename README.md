@@ -3,8 +3,18 @@
 - 気になったライブラリとかをこのリポジトリで試すことで、実際の使用感を感じる
 
 # TODO
+- [ ] Playの読んだ方が良さそうドキュメントを読む
+  - [ ] Working with Json(Jsonを返すAPIつくるよ)
+  - [ ] Accessing an SQL database(ORMのSlickをつかってみるよ)
+  - [ ] Calling REST APIs with Play WS(Play WSというやつ知らないので知るまで)
+  - [ ] Integrating with Pekko(Pekkoを入門)
+  - [ ] Dependency Injection(ジュースをつかってみるよ)
+  - [ ] Application Settings(なんの設定？)
+  - [ ] Testing your application(ジュースを踏まえたテストの書き方がありそう)
+  - [ ] Logging
 - [ ] PlayがWebフレームワークのデファクトみたいなので入れる
-    - [ ] 適当なAPIを作る
+    - [x] 適当なAPIを作る
+    - [ ] 適当なAPI(Json返す)を作る
     - [ ] テストを書く
 - [ ] ORMを入れる
     - [ ] ScalikeJDBCがデファクト？
