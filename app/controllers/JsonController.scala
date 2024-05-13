@@ -14,6 +14,25 @@ class JsonController @Inject()(val controllerComponents: ControllerComponents) e
     val json = Json.toJson(Place.list)
     Ok(json)
   }
+  
+  def listSamples() = Action {
+    val dataSource = new DBAccessSampleDataSource
+    val maybeSample = dataSource.selectSample("1111")
+    maybeSample match {
+      case Some(sample) =>
+        val sampleJson = Json.toJson(sample)
+        Ok(sampleJson)
+      case None => NotFound
+    }
+  }
+
+  // Sample => Json
+  implicit val sampleWrites: Writes[Sample] = (
+    (JsPath \ "col1").write[String] and
+      (JsPath \ "col2").write[String] and
+      (JsPath \ "col3").write[String]
+    )(unlift(Sample.unapply))
+
 
   def savePlace(): Action[JsValue] = Action(parse.json) { request =>
     val placeResult = request.body.validate[Place]

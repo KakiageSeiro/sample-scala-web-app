@@ -15,3 +15,6 @@ GET  /hello        controllers.HomeController.hello(name: String)
 GET   /places               controllers.JsonController.listPlaces()
 POST  /places               controllers.JsonController.savePlace()
 POST  /places2               controllers.JsonController.savePlaceConcise()
+
+# DBアクセスするAPIのサンプル
+GET   /dbsample               controllers.JsonController.listSamples()

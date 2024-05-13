@@ -4,8 +4,8 @@
 
 # TODO
 - [ ] Playの読んだ方が良さそうドキュメントを読む
-  - [ ] Working with Json(Jsonを返すAPIつくるよ)
-  - [ ] Accessing an SQL database(ORMのSlickをつかってみるよ)
+  - [x] Working with Json(Jsonを返すAPIつくるよ)(序盤だけよんだ)
+  - [x] Accessing an SQL database(ORMのSlickをつかってみるよ)
   - [ ] Calling REST APIs with Play WS(Play WSというやつ知らないので知るまで)
   - [ ] Integrating with Pekko(Pekkoを入門)
   - [ ] Dependency Injection(ジュースをつかってみるよ)
