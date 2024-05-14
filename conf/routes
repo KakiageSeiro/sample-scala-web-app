@@ -17,4 +17,4 @@ POST  /places               controllers.JsonController.savePlace()
 POST  /places2               controllers.JsonController.savePlaceConcise()
 
 # DBアクセスするAPIのサンプル
-GET   /dbsample               controllers.JsonController.listSamples()
+GET   /dbsample               controllers.JsonController.selectFromRDBSample()

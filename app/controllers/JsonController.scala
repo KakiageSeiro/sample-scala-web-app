@@ -15,7 +15,7 @@ class JsonController @Inject()(val controllerComponents: ControllerComponents) e
     Ok(json)
   }
   
-  def listSamples() = Action {
+  def selectFromRDBSample() = Action {
     val dataSource = new DBAccessSampleDataSource
     val maybeSample = dataSource.selectSample("1111")
     maybeSample match {

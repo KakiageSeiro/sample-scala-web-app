@@ -6,9 +6,9 @@
 - [ ] Playの読んだ方が良さそうドキュメントを読む
   - [x] Working with Json(Jsonを返すAPIつくるよ)(序盤だけよんだ)
   - [x] Accessing an SQL database(ORMのSlickをつかってみるよ)
-  - [ ] Calling REST APIs with Play WS(Play WSというやつ知らないので知るまで)
-  - [ ] Integrating with Pekko(Pekkoを入門)
+  - [x] Calling REST APIs with Play WS(Play WSというやつ知らないので知るまで)→HTTPコールするやつ。WSはWebServiceライブラリのことみたい
   - [ ] Dependency Injection(ジュースをつかってみるよ)
+  - [ ] Integrating with Pekko(Pekkoを入門)
   - [ ] Application Settings(なんの設定？)
   - [ ] Testing your application(ジュースを踏まえたテストの書き方がありそう)
   - [ ] Logging
