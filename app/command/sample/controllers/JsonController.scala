@@ -1,7 +1,7 @@
 package command.sample.controllers
 
 import command.sample.domain.Sample
-import command.sample.infrastructure.DBAccessSampleDataSource
+import command.sample.repository.SampleDataRepository
 import play.api.mvc.{BaseController, *}
 import play.api.libs.json.*
 import play.api.libs.functional.syntax.*
@@ -10,7 +10,7 @@ import play.api.libs.json.Reads.*
 import javax.inject.*
 
 @Singleton
-class JsonController @Inject()(val controllerComponents: ControllerComponents) extends BaseController {
+class JsonController @Inject()(val controllerComponents: ControllerComponents, sampleDataRepository: SampleDataRepository) extends BaseController {
 
   def listPlaces() = Action {
     val json = Json.toJson(Place.list)
@@ -18,8 +18,7 @@ class JsonController @Inject()(val controllerComponents: ControllerComponents) e
   }
   
   def selectFromRDBSample() = Action {
-    val dataSource = new DBAccessSampleDataSource
-    val maybeSample = dataSource.selectSample("1111")
+    val maybeSample = sampleDataRepository.selectSample("1111")
     maybeSample match {
       case Some(sample) =>
         val sampleJson = Json.toJson(sample)
