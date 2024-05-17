@@ -1,9 +1,11 @@
-package controllers
+package command.sample.controllers
 
+import command.sample.domain.Sample
+import command.sample.infrastructure.DBAccessSampleDataSource
 import play.api.mvc.{BaseController, *}
 import play.api.libs.json.*
 import play.api.libs.functional.syntax.*
-import play.api.libs.json.Reads._
+import play.api.libs.json.Reads.*
 
 import javax.inject.*
 

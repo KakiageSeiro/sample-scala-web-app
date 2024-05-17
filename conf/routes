@@ -4,17 +4,17 @@
 # ~~~~
 
 # An example controller showing a sample home page
-GET     /                           controllers.HomeController.index()
+GET     /                           command.home.controllers.HomeController.index()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
-GET  /hello        controllers.HomeController.hello(name: String)
+GET  /hello        command.home.controllers.HomeController.hello(name: String)
 
 # Jsonを扱うAPIのサンプル
-GET   /places               controllers.JsonController.listPlaces()
-POST  /places               controllers.JsonController.savePlace()
-POST  /places2               controllers.JsonController.savePlaceConcise()
+GET   /places               command.sample.controllers.JsonController.listPlaces()
+POST  /places               command.sample.controllers.JsonController.savePlace()
+POST  /places2               command.sample.controllers.JsonController.savePlaceConcise()
 
 # DBアクセスするAPIのサンプル
-GET   /dbsample               controllers.JsonController.selectFromRDBSample()
+GET   /dbsample               command.sample.controllers.JsonController.selectFromRDBSample()

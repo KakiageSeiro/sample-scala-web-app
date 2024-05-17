@@ -25,6 +25,8 @@ libraryDependencies ++= Seq(
   "org.scalikejdbc" %% "scalikejdbc-play-initializer" % "3.0.0-scalikejdbc-4.2"
 )
 
+// DI
+libraryDependencies += guice
 
 
 
