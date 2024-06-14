@@ -8,18 +8,18 @@
   - [x] Accessing an SQL database(ORMのSlickをつかってみるよ)
   - [x] Calling REST APIs with Play WS(Play WSというやつ知らないので知るまで)→HTTPコールするやつ。WSはWebServiceライブラリのことみたい
   - [x] Dependency Injection(ジュースをつかってみるよ)
-  - [ ] Integrating with Pekko(Pekkoを入門)
-  - [ ] Application Settings(なんの設定？)
-  - [ ] Testing your application(ジュースを踏まえたテストの書き方がありそう)
-  - [ ] Logging
+  - [x] Application Settings
+  - [x] Testing your application(ジュースを踏まえたテストの書き方がありそう)
+  - [x] Logging
+  - [ ] Integrating with Pekko(Pekkoを入門)(これがっつりコード変わるからCatsの後にしたほうが良いかも)
 - [ ] PlayがWebフレームワークのデファクトみたいなので入れる
     - [x] 適当なAPIを作る
-    - [ ] 適当なAPI(Json返す)を作る
-    - [ ] テストを書く
-- [ ] ORMを入れる
-    - [ ] ScalikeJDBCがデファクト？
+    - [x] 適当なAPI(Json返す)を作る
+    - [x] テストを書く
+- [x] ORMを入れる
+    - [x] ScalikeJDBCがデファクト？
         - [ ] SQLが書けるORMが好みなので、可能か調べる
-    - [ ] APIからDBを触れるようにする
+    - [x] APIからDBを触れるようにする
 - [ ] Catsを入れる
     - [ ] モナドとかを学んだが、実際にコードを読み書きするときにどれくらい嬉しいかをイメージしきれていないので解消したい
         - [ ] Catsは多分モナドとかをユーザー定義として作らなくても、事前に用意しておきましたよ系ライブラリだと思うが、これを確認したい

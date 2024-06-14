@@ -28,6 +28,8 @@ libraryDependencies ++= Seq(
 // DI
 libraryDependencies += guice
 
+// Cats
+libraryDependencies += "org.typelevel" %% "cats-core" % "2.10.0"
 
 
 
