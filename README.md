@@ -11,7 +11,7 @@
   - [x] Application Settings
   - [x] Testing your application(ジュースを踏まえたテストの書き方がありそう)
   - [x] Logging
-  - [ ] Integrating with Pekko(Pekkoを入門)(これがっつりコード変わるからCatsの後にしたほうが良いかも)
+  - [x] Integrating with Pekko(Pekkoを入門)(これがっつりコード変わるからCatsの後にしたほうが良いかも)
 - [x] PlayがWebフレームワークのデファクトみたいなので入れる
     - [x] 適当なAPIを作る
     - [x] 適当なAPI(Json返す)を作る
